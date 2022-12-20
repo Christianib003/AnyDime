@@ -21,8 +21,7 @@ test:
 
 production:
   <<: *default
-  database: anydime_production
-  username: chris
-  password: password
-  host: localhost
-  port: 5432
+  url: <%= ENV["DATABASE_URL"] %>
+  database: safedime_production
+  username: safedime
+  password: <%= ENV["SAFEDIME_DATABASE_PASSWORD"] %>
