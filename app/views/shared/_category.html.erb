@@ -8,7 +8,7 @@
   </div>
   <div class='d-flex flex-column justify-content-center align-items-end'>
     <span><strong>Spent: $<%=category.payments.sum(:amount)%></strong></span>
-    <%= button_to category_path(category.id), method: :delete, class: 'btn icon' do%>
+    <%= button_to category_path(category.id), method: :delete, class: 'icon' do%>
       <i class="fa fa-trash text-danger fs-2"></i>
     <%end%>
   </div>

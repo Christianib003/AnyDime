@@ -4,7 +4,7 @@
       <p class='m-0'><strong>Amount Spent:</strong> $ <%=payment.amount%></p> 
       <p><strong>Date:</strong> <%=payment.created_at.strftime('%d-%m-%Y %H:%M')%></p>
     </div>
-    <%= button_to category_payment_path(category_id: params[:id], id: payment.id), method: :delete, class: 'btn icon' do%>
+    <%= button_to category_payment_path(category_id: params[:id], id: payment.id), method: :delete, class: 'icon' do%>
       <i class="fa fa-trash text-danger fs-2"></i>
     <%end%>
 </div>
