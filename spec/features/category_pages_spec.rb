@@ -10,7 +10,7 @@ RSpec.feature 'categories page', type: :feature do
 
   scenario 'can see the categories, their icons, their name' do
     expect(page).to have_content(@categories.first.name)
-    expect(page).to have_css("img[src*='#{@categories.last.icon}']")
+    expect(page).to have_css("img[src*='#{@categories.first.icon}']")
   end
 
   scenario 'clicking one category, redirect to category payments show page' do
